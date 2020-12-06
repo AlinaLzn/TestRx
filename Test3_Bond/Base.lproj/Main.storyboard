@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test3_Bond" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69I-B9-Vlh">
+                                <rect key="frame" x="20" y="194" width="388" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="join"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your second name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6MU-bD-b42">
+                                <rect key="frame" x="20" y="288" width="388" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="join"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVD-Ee-GOM">
+                                <rect key="frame" x="123" y="476" width="182" height="60"/>
+                                <color key="backgroundColor" red="0.43594681600000001" green="0.47939077050000001" blue="0.1740469114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ihl-yk-pHY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wg8-mz-sQb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nD-7A-rMf">
+                                <rect key="frame" x="20" y="382" width="388" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-uq-1d6">
+                                <rect key="frame" x="20" y="84" width="388" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.78670042000211493" green="0.88829818879715117" blue="0.43225561998350859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eEd-uq-1d6" secondAttribute="trailing" constant="20" id="2LR-4j-FtL"/>
+                            <constraint firstItem="pVD-Ee-GOM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="3Mc-mc-wye"/>
+                            <constraint firstItem="7nD-7A-rMf" firstAttribute="width" secondItem="6MU-bD-b42" secondAttribute="width" id="3bl-od-U7c"/>
+                            <constraint firstItem="69I-B9-Vlh" firstAttribute="top" secondItem="eEd-uq-1d6" secondAttribute="bottom" constant="89" id="489-uj-nVt"/>
+                            <constraint firstItem="6MU-bD-b42" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Ot-B0-XHy"/>
+                            <constraint firstItem="6MU-bD-b42" firstAttribute="top" secondItem="69I-B9-Vlh" secondAttribute="bottom" constant="60" id="7hB-LE-23P"/>
+                            <constraint firstItem="6MU-bD-b42" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R5l-8E-IhD"/>
+                            <constraint firstItem="pVD-Ee-GOM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V1i-aa-4En"/>
+                            <constraint firstItem="69I-B9-Vlh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XPk-7n-fie"/>
+                            <constraint firstItem="7nD-7A-rMf" firstAttribute="top" secondItem="6MU-bD-b42" secondAttribute="bottom" constant="60" id="YLT-CB-anX"/>
+                            <constraint firstItem="7nD-7A-rMf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YNj-zx-PZm"/>
+                            <constraint firstItem="pVD-Ee-GOM" firstAttribute="top" secondItem="7nD-7A-rMf" secondAttribute="bottom" constant="60" id="fJd-cd-LMz"/>
+                            <constraint firstItem="eEd-uq-1d6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="giu-AE-DBd"/>
+                            <constraint firstItem="6MU-bD-b42" firstAttribute="width" secondItem="69I-B9-Vlh" secondAttribute="width" id="jga-ke-yBE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7nD-7A-rMf" secondAttribute="trailing" symbolic="YES" id="lZU-u0-7Us"/>
+                            <constraint firstItem="eEd-uq-1d6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nL2-SV-hnk"/>
+                            <constraint firstItem="69I-B9-Vlh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="s7W-wc-tGX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="7nD-7A-rMf" id="8Xq-CD-qpG"/>
+                        <outlet property="greetingLabel" destination="eEd-uq-1d6" id="V1m-5t-uOE"/>
+                        <outlet property="nameTextField" destination="69I-B9-Vlh" id="3g5-qf-ulG"/>
+                        <outlet property="secondNameTextField" destination="6MU-bD-b42" id="Ube-XO-akb"/>
+                        <outlet property="sendButton" destination="pVD-Ee-GOM" id="wf6-Fe-rOi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.22429906542056" y="81.641468682505405"/>
+        </scene>
+    </scenes>
+</document>
